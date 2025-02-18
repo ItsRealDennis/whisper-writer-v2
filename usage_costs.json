@@ -1,0 +1,637 @@
+{
+  "whisper_usage": [
+    {
+      "timestamp": "2025-02-17T19:35:50.996405",
+      "model": "whisper-1",
+      "duration_seconds": 27,
+      "cost": 0.0027
+    },
+    {
+      "timestamp": "2025-02-17T19:38:14.368506",
+      "model": "whisper-1",
+      "duration_seconds": 6,
+      "cost": 0.0006000000000000001
+    },
+    {
+      "timestamp": "2025-02-17T19:39:58.128055",
+      "model": "whisper-1",
+      "duration_seconds": 10,
+      "cost": 0.001
+    },
+    {
+      "timestamp": "2025-02-17T19:40:54.231587",
+      "model": "whisper-1",
+      "duration_seconds": 15,
+      "cost": 0.0015
+    },
+    {
+      "timestamp": "2025-02-17T19:43:14.992102",
+      "model": "whisper-1",
+      "duration_seconds": 7,
+      "cost": 0.0007
+    },
+    {
+      "timestamp": "2025-02-17T20:11:49.550564",
+      "model": "whisper-1",
+      "duration_seconds": 11,
+      "cost": 0.0011
+    },
+    {
+      "timestamp": "2025-02-17T20:14:32.139747",
+      "model": "whisper-1",
+      "duration_seconds": 11,
+      "cost": 0.0011
+    },
+    {
+      "timestamp": "2025-02-17T20:18:48.041431",
+      "model": "whisper-1",
+      "duration_seconds": 6,
+      "cost": 0.0006000000000000001
+    },
+    {
+      "timestamp": "2025-02-17T20:19:47.963803",
+      "model": "whisper-1",
+      "duration_seconds": 8,
+      "cost": 0.0008
+    },
+    {
+      "timestamp": "2025-02-17T20:23:00.000255",
+      "model": "whisper-1",
+      "duration_seconds": 23,
+      "cost": 0.0023
+    },
+    {
+      "timestamp": "2025-02-17T20:24:19.874988",
+      "model": "whisper-1",
+      "duration_seconds": 25,
+      "cost": 0.0025
+    },
+    {
+      "timestamp": "2025-02-17T20:27:46.870885",
+      "model": "whisper-1",
+      "duration_seconds": 26,
+      "cost": 0.0026000000000000003
+    },
+    {
+      "timestamp": "2025-02-17T20:30:27.875074",
+      "model": "whisper-1",
+      "duration_seconds": 3,
+      "cost": 0.00030000000000000003
+    },
+    {
+      "timestamp": "2025-02-17T20:32:28.541984",
+      "model": "whisper-1",
+      "duration_seconds": 12,
+      "cost": 0.0012000000000000001
+    },
+    {
+      "timestamp": "2025-02-17T20:34:36.188656",
+      "model": "whisper-1",
+      "duration_seconds": 20,
+      "cost": 0.002
+    },
+    {
+      "timestamp": "2025-02-17T20:36:49.167764",
+      "model": "whisper-1",
+      "duration_seconds": 14,
+      "cost": 0.0014
+    },
+    {
+      "timestamp": "2025-02-17T20:38:52.795684",
+      "model": "whisper-1",
+      "duration_seconds": 34,
+      "cost": 0.0034000000000000002
+    },
+    {
+      "timestamp": "2025-02-17T20:44:16.455909",
+      "model": "whisper-1",
+      "duration_seconds": 13,
+      "cost": 0.0013000000000000002
+    },
+    {
+      "timestamp": "2025-02-17T21:05:19.678662",
+      "model": "whisper-1",
+      "duration_seconds": 7,
+      "cost": 0.0007
+    },
+    {
+      "timestamp": "2025-02-17T21:35:16.078304",
+      "model": "whisper-1",
+      "duration_seconds": 9,
+      "cost": 0.0009000000000000001
+    },
+    {
+      "timestamp": "2025-02-17T21:35:44.944881",
+      "model": "whisper-1",
+      "duration_seconds": 2,
+      "cost": 0.0002
+    },
+    {
+      "timestamp": "2025-02-17T21:35:54.674931",
+      "model": "whisper-1",
+      "duration_seconds": 1,
+      "cost": 0.0001
+    },
+    {
+      "timestamp": "2025-02-17T21:36:43.878819",
+      "model": "whisper-1",
+      "duration_seconds": 5,
+      "cost": 0.0005
+    },
+    {
+      "timestamp": "2025-02-17T21:37:02.688867",
+      "model": "whisper-1",
+      "duration_seconds": 1,
+      "cost": 0.0001
+    },
+    {
+      "timestamp": "2025-02-17T21:37:25.037482",
+      "model": "whisper-1",
+      "duration_seconds": 9,
+      "cost": 0.0009000000000000001
+    },
+    {
+      "timestamp": "2025-02-17T21:38:04.846610",
+      "model": "whisper-1",
+      "duration_seconds": 10,
+      "cost": 0.001
+    },
+    {
+      "timestamp": "2025-02-17T21:40:37.336952",
+      "model": "whisper-1",
+      "duration_seconds": 9,
+      "cost": 0.0009000000000000001
+    },
+    {
+      "timestamp": "2025-02-17T21:42:43.142540",
+      "model": "whisper-1",
+      "duration_seconds": 2,
+      "cost": 0.0002
+    },
+    {
+      "timestamp": "2025-02-17T21:44:18.916735",
+      "model": "whisper-1",
+      "duration_seconds": 1,
+      "cost": 0.0001
+    },
+    {
+      "timestamp": "2025-02-17T21:47:02.964938",
+      "model": "whisper-1",
+      "duration_seconds": 8,
+      "cost": 0.0008
+    },
+    {
+      "timestamp": "2025-02-17T21:47:27.640157",
+      "model": "whisper-1",
+      "duration_seconds": 8,
+      "cost": 0.0008
+    },
+    {
+      "timestamp": "2025-02-17T21:52:49.239930",
+      "model": "whisper-1",
+      "duration_seconds": 8,
+      "cost": 0.0008
+    },
+    {
+      "timestamp": "2025-02-17T21:53:05.108264",
+      "model": "whisper-1",
+      "duration_seconds": 2,
+      "cost": 0.0002
+    },
+    {
+      "timestamp": "2025-02-18T13:45:29.329816",
+      "model": "whisper-1",
+      "duration_seconds": 5,
+      "cost": 0.0005
+    },
+    {
+      "timestamp": "2025-02-18T13:47:05.426378",
+      "model": "whisper-1",
+      "duration_seconds": 19,
+      "cost": 0.0019
+    },
+    {
+      "timestamp": "2025-02-18T13:49:02.992384",
+      "model": "whisper-1",
+      "duration_seconds": 12,
+      "cost": 0.0012000000000000001
+    },
+    {
+      "timestamp": "2025-02-18T13:52:32.177900",
+      "model": "whisper-1",
+      "duration_seconds": 11,
+      "cost": 0.0011
+    }
+  ],
+  "gpt_usage": [
+    {
+      "timestamp": "2025-02-17T19:35:52.614911",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 647,
+      "output_tokens": 157,
+      "input_cost": 1.6175000000000002e-06,
+      "output_cost": 1.5700000000000002e-06,
+      "total_cost": 3.1875000000000004e-06,
+      "original_text": "Http so please go ahead and update the file where we explain what we have done so far with this whisper writer also go ahead and change the name to whisper writer",
+      "enhanced_text": "Please go ahead and update the file where we explain what we have done so far with this Whisper Writer. Also, go ahead and change the name to Whisper Writer."
+    },
+    {
+      "timestamp": "2025-02-17T19:38:15.394626",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 513,
+      "output_tokens": 28,
+      "input_cost": 1.2825000000000002e-06,
+      "output_cost": 2.8e-07,
+      "total_cost": 1.5625000000000003e-06,
+      "original_text": "Hey chatgbt, this is a test.",
+      "enhanced_text": "Hey ChatGPT, this is a test."
+    },
+    {
+      "timestamp": "2025-02-17T19:40:02.376447",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 111,
+      "output_tokens": 19,
+      "input_cost": 2.7750000000000004e-07,
+      "output_cost": 1.9e-07,
+      "total_cost": 4.675000000000001e-07,
+      "original_text": "So right now we're just testing if the token uses and the other token trackers is working.",
+      "enhanced_text": "So, right now we're just testing if the token usage and the other token trackers are working."
+    },
+    {
+      "timestamp": "2025-02-17T19:40:55.629195",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 119,
+      "output_tokens": 32,
+      "input_cost": 2.975e-07,
+      "output_cost": 3.2e-07,
+      "total_cost": 6.175e-07,
+      "original_text": "So as I just discovered we are using the tool and in the GUI is not displaying the token usage so the tracker is not working",
+      "enhanced_text": "So, I just discovered that we are using the tool, and in the GUI, it is not displaying the token usage, so the tracker is not working."
+    },
+    {
+      "timestamp": "2025-02-17T19:43:16.462491",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 111,
+      "output_tokens": 19,
+      "input_cost": 2.7750000000000004e-07,
+      "output_cost": 1.9e-07,
+      "total_cost": 4.675000000000001e-07,
+      "original_text": "So right now I'm just testing if the token trigger is updating live as we are speaking.",
+      "enhanced_text": "So, right now I'm just testing if the token trigger is updating live as we are speaking."
+    },
+    {
+      "timestamp": "2025-02-17T20:11:51.232562",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 115,
+      "output_tokens": 20,
+      "input_cost": 2.8750000000000005e-07,
+      "output_cost": 2.0000000000000002e-07,
+      "total_cost": 4.875000000000001e-07,
+      "original_text": "Why is it that I'm not allowed to change or edit with Elementor? It happened after I changed some settings.",
+      "enhanced_text": "Why am I not allowed to change or edit with Elementor? This happened after I changed some settings."
+    },
+    {
+      "timestamp": "2025-02-17T20:14:33.444988",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 116,
+      "output_tokens": 23,
+      "input_cost": 2.9000000000000003e-07,
+      "output_cost": 2.3000000000000002e-07,
+      "total_cost": 5.200000000000001e-07,
+      "original_text": "Hey, so today I want you to figure out how I can make the most beautiful WordPress design in history.",
+      "enhanced_text": "Hey, so today I want you to figure out how I can create the most beautiful WordPress design in history."
+    },
+    {
+      "timestamp": "2025-02-17T20:18:49.404880",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 104,
+      "output_tokens": 11,
+      "input_cost": 2.6e-07,
+      "output_cost": 1.1e-07,
+      "total_cost": 3.7e-07,
+      "original_text": "Can you speak danish now? Chat gives 10",
+      "enhanced_text": "Can you speak Danish now? Chat gives 10."
+    },
+    {
+      "timestamp": "2025-02-17T20:19:49.418993",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 112,
+      "output_tokens": 16,
+      "input_cost": 2.8e-07,
+      "output_cost": 1.6e-07,
+      "total_cost": 4.4e-07,
+      "original_text": "Kan du huske det her t\u00e6t signal? Ja, det synes jeg sgu. Hey!",
+      "enhanced_text": "Can you remember this close signal? Yeah, I think I can. Hey!"
+    },
+    {
+      "timestamp": "2025-02-17T20:23:01.549095",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 1166,
+      "output_tokens": 167,
+      "input_cost": 2.915e-06,
+      "output_cost": 1.6700000000000003e-06,
+      "total_cost": 4.585e-06,
+      "original_text": "Hej ChatGPT, kan du \u00e6ndre m\u00e5den som n\u00e5r den siger recording i midten af sk\u00e6rmen, kan du lave det til noget bedre, et flottere design m\u00e5ske, lidt mere minimalistisk?",
+      "enhanced_text": "Hej ChatGPT, kan du \u00e6ndre m\u00e5den, som n\u00e5r den siger \"recording\" i midten af sk\u00e6rmen? Kan du lave det til noget bedre, et flottere design m\u00e5ske, lidt mere minimalistisk?"
+    },
+    {
+      "timestamp": "2025-02-17T20:24:21.480115",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 826,
+      "output_tokens": 218,
+      "input_cost": 2.065e-06,
+      "output_cost": 2.1800000000000003e-06,
+      "total_cost": 4.245000000000001e-06,
+      "original_text": "It says good enough Whisper API cost in the terminal in VS Code But it doesn't register in GUI And GPT API cost is still 0.0 even if it enhances So there is something wrong with our token counter",
+      "enhanced_text": "It says the Whisper API cost is good enough in the terminal in VS Code, but it doesn't register in the GUI. Also, the GPT API cost is still 0.0, even if it enhances. So, there is something wrong with our token counter."
+    },
+    {
+      "timestamp": "2025-02-17T20:27:48.829139",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 294,
+      "output_tokens": 66,
+      "input_cost": 7.350000000000001e-07,
+      "output_cost": 6.6e-07,
+      "total_cost": 1.3950000000000002e-06,
+      "original_text": "S\u00e5 i midten, n\u00e5r vi bruger WhisperRider, s\u00e5 skriver den, at vi skriver i en hvert i midten af skjermen. Jeg havde t\u00e6nkt mig, om vi kunne g\u00f8re denne design mere 2025. Lidt mere minimalistisk, og m\u00e5ske tilf\u00f8je nogle lydvogne eller noget andet.",
+      "enhanced_text": "S\u00e5 i midten, n\u00e5r vi bruger WhisperRider, skriver den, at vi skriver i en boks i midten af sk\u00e6rmen. Jeg havde t\u00e6nkt p\u00e5, om vi kunne g\u00f8re dette design mere 2025. Lidt mere minimalistisk, og m\u00e5ske tilf\u00f8je nogle lydvogne eller noget andet."
+    },
+    {
+      "timestamp": "2025-02-17T20:30:29.184766",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 169,
+      "output_tokens": 5,
+      "input_cost": 4.225000000000001e-07,
+      "output_cost": 5.0000000000000004e-08,
+      "total_cost": 4.725000000000001e-07,
+      "original_text": "Thank you for watching!",
+      "enhanced_text": "Thank you for watching!"
+    },
+    {
+      "timestamp": "2025-02-17T20:32:30.211892",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 185,
+      "output_tokens": 24,
+      "input_cost": 4.625e-07,
+      "output_cost": 2.4000000000000003e-07,
+      "total_cost": 7.025e-07,
+      "original_text": "So how does this work? The soundwaves don't seem to work very well, at least they don't move",
+      "enhanced_text": "So, how does this work? The sound waves don't seem to work very well; at least, they don't move."
+    },
+    {
+      "timestamp": "2025-02-17T20:34:37.851132",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 188,
+      "output_tokens": 28,
+      "input_cost": 4.7000000000000005e-07,
+      "output_cost": 2.8e-07,
+      "total_cost": 7.5e-07,
+      "original_text": "So our token counter doesn't work It does count up in percentages But it doesn't show how much money has been spent each time",
+      "enhanced_text": "So, our token counter doesn't work. It does count up in percentages, but it doesn't show how much money has been spent each time."
+    },
+    {
+      "timestamp": "2025-02-17T20:36:50.585323",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 196,
+      "output_tokens": 33,
+      "input_cost": 4.900000000000001e-07,
+      "output_cost": 3.3e-07,
+      "total_cost": 8.200000000000001e-07,
+      "original_text": "and you're 100% sure that that is what we have to add we don't need to add like a cache or anything since everything is being locked in the terminal",
+      "enhanced_text": "And you're 100% sure that that's what we have to add? We don't need to add a cache or anything, since everything is being logged in the terminal?"
+    },
+    {
+      "timestamp": "2025-02-17T20:38:55.071241",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 228,
+      "output_tokens": 60,
+      "input_cost": 5.7e-07,
+      "output_cost": 6.000000000000001e-07,
+      "total_cost": 1.1700000000000002e-06,
+      "original_text": "So I think it's important that above the bars where we are tracking the percentage, you could add like two big numbers showing the token cost of like each API. So for the Whisper API and for the chat QPT API, and then that will dynamically update based on the speech detected. And we do it like that.",
+      "enhanced_text": "So, I think it's important that above the bars where we are tracking the percentage, you add two big numbers showing the token cost for each API. For example, the Whisper API and the Chat GPT API. These numbers would dynamically update based on the speech detected. That's how we should do it."
+    },
+    {
+      "timestamp": "2025-02-17T20:44:18.266700",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 259,
+      "output_tokens": 30,
+      "input_cost": 6.475e-07,
+      "output_cost": 3.0000000000000004e-07,
+      "total_cost": 9.475e-07,
+      "original_text": "S\u00e5 hvilke andre funktioner tror du, vi b\u00f8r implementere i denne WhisperWriter-applikation, f\u00f8r vi l\u00f8ber den til GitHub igen?",
+      "enhanced_text": "S\u00e5, hvilke andre funktioner tror du, vi b\u00f8r implementere i denne WhisperWriter-applikation, f\u00f8r vi uploader den til GitHub igen?"
+    },
+    {
+      "timestamp": "2025-02-17T21:05:21.524000",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 256,
+      "output_tokens": 13,
+      "input_cost": 6.4e-07,
+      "output_cost": 1.3e-07,
+      "total_cost": 7.7e-07,
+      "original_text": "so would it be hard to make this a chrome extension",
+      "enhanced_text": "So, would it be hard to make this a Chrome extension?"
+    },
+    {
+      "timestamp": "2025-02-17T21:35:17.677860",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 270,
+      "output_tokens": 26,
+      "input_cost": 6.750000000000001e-07,
+      "output_cost": 2.6e-07,
+      "total_cost": 9.350000000000002e-07,
+      "original_text": "Hello ChetTBC, can you please go ahead and make sure that the Chrome extension is working perfectly fine right now?",
+      "enhanced_text": "Hello, ChetTBC. Can you please go ahead and make sure that the Chrome extension is working perfectly fine right now?"
+    },
+    {
+      "timestamp": "2025-02-17T21:35:45.954808",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 249,
+      "output_tokens": 4,
+      "input_cost": 6.225000000000001e-07,
+      "output_cost": 4e-08,
+      "total_cost": 6.625000000000001e-07,
+      "original_text": "Bye-bye.",
+      "enhanced_text": "Bye-bye."
+    },
+    {
+      "timestamp": "2025-02-17T21:35:56.034838",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 246,
+      "output_tokens": 26,
+      "input_cost": 6.15e-07,
+      "output_cost": 2.6e-07,
+      "total_cost": 8.750000000000001e-07,
+      "original_text": "you",
+      "enhanced_text": "I'm sorry, but it seems like your request is incomplete. Could you please provide the full transcription you would like me to enhance?"
+    },
+    {
+      "timestamp": "2025-02-17T21:36:45.041927",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 379,
+      "output_tokens": 12,
+      "input_cost": 9.475e-07,
+      "output_cost": 1.2000000000000002e-07,
+      "total_cost": 1.0675e-06,
+      "original_text": "Hey chat UBT, do you understand what I'm saying?",
+      "enhanced_text": "Hey chat UBT, do you understand what I'm saying?"
+    },
+    {
+      "timestamp": "2025-02-17T21:37:03.848161",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 246,
+      "output_tokens": 9,
+      "input_cost": 6.15e-07,
+      "output_cost": 9e-08,
+      "total_cost": 7.05e-07,
+      "original_text": "you",
+      "enhanced_text": "Certainly! Here's the enhanced transcription:\n\nYou."
+    },
+    {
+      "timestamp": "2025-02-17T21:37:26.284445",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 261,
+      "output_tokens": 17,
+      "input_cost": 6.525000000000001e-07,
+      "output_cost": 1.7000000000000001e-07,
+      "total_cost": 8.225000000000002e-07,
+      "original_text": "Hey ChatGPT, can you understand what I'm saying? This is a test.",
+      "enhanced_text": "Hey, ChatGPT, can you understand what I'm saying? This is a test."
+    },
+    {
+      "timestamp": "2025-02-17T21:38:06.046446",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 261,
+      "output_tokens": 16,
+      "input_cost": 6.525000000000001e-07,
+      "output_cost": 1.6e-07,
+      "total_cost": 8.125000000000001e-07,
+      "original_text": "Can you go ahead and make sure that the Chrome extension is working perfectly fine?",
+      "enhanced_text": "Can you go ahead and make sure that the Chrome extension is working perfectly fine?"
+    },
+    {
+      "timestamp": "2025-02-17T21:40:38.825436",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 377,
+      "output_tokens": 11,
+      "input_cost": 9.425000000000001e-07,
+      "output_cost": 1.1e-07,
+      "total_cost": 1.0525e-06,
+      "original_text": "HHGPT, kan du forst\u00e5 hvad jeg siger?",
+      "enhanced_text": "HHGPT, kan du forst\u00e5, hvad jeg siger?"
+    },
+    {
+      "timestamp": "2025-02-17T21:42:44.607418",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 368,
+      "output_tokens": 14,
+      "input_cost": 9.200000000000001e-07,
+      "output_cost": 1.4e-07,
+      "total_cost": 1.06e-06,
+      "original_text": "",
+      "enhanced_text": "Of course! Please provide the transcription you would like me to enhance."
+    },
+    {
+      "timestamp": "2025-02-17T21:44:21.142106",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 246,
+      "output_tokens": 27,
+      "input_cost": 6.15e-07,
+      "output_cost": 2.7e-07,
+      "total_cost": 8.85e-07,
+      "original_text": "you",
+      "enhanced_text": "I'm sorry, but it seems like your request is incomplete. Could you please provide the full transcription that you would like me to enhance?"
+    },
+    {
+      "timestamp": "2025-02-17T21:47:04.299707",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 377,
+      "output_tokens": 11,
+      "input_cost": 9.425000000000001e-07,
+      "output_cost": 1.1e-07,
+      "total_cost": 1.0525e-06,
+      "original_text": "S\u00e5 forst\u00e5r du hvad jeg siger lige nu?",
+      "enhanced_text": "S\u00e5 forst\u00e5r du, hvad jeg siger lige nu?"
+    },
+    {
+      "timestamp": "2025-02-17T21:47:28.664302",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 254,
+      "output_tokens": 9,
+      "input_cost": 6.350000000000001e-07,
+      "output_cost": 9e-08,
+      "total_cost": 7.25e-07,
+      "original_text": "Hey, g\u00e5r det godt her i kommunen?",
+      "enhanced_text": "Hey, g\u00e5r det godt her i kommunen?"
+    },
+    {
+      "timestamp": "2025-02-17T21:52:50.643457",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 374,
+      "output_tokens": 6,
+      "input_cost": 9.35e-07,
+      "output_cost": 6.000000000000001e-08,
+      "total_cost": 9.95e-07,
+      "original_text": "Hey, tjek GBT!",
+      "enhanced_text": "Hey, tjek GPT!"
+    },
+    {
+      "timestamp": "2025-02-17T21:53:06.311606",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 570,
+      "output_tokens": 19,
+      "input_cost": 1.425e-06,
+      "output_cost": 1.9e-07,
+      "total_cost": 1.615e-06,
+      "original_text": "Hvis du kan lide denne video, s\u00e5 kan du gerne lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5 lide og abonnere p\u00e5 kanalen, s\u00e5 kan du ogs\u00e5",
+      "enhanced_text": "Hvis du kan lide denne video, s\u00e5 kan du gerne like og abonnere p\u00e5 kanalen."
+    },
+    {
+      "timestamp": "2025-02-18T13:45:30.674388",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 379,
+      "output_tokens": 12,
+      "input_cost": 9.475e-07,
+      "output_cost": 1.2000000000000002e-07,
+      "total_cost": 1.0675e-06,
+      "original_text": "Kan du godt g\u00e5 foran og opdatere denne video?",
+      "enhanced_text": "Kan du godt g\u00e5 foran og opdatere denne video?"
+    },
+    {
+      "timestamp": "2025-02-18T13:47:06.728123",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 398,
+      "output_tokens": 32,
+      "input_cost": 9.950000000000002e-07,
+      "output_cost": 3.2e-07,
+      "total_cost": 1.3150000000000001e-06,
+      "original_text": "Kan du g\u00e5 foran og forl\u00e6gge autos\u00e6tning for langs\u00e6tning i s\u00e6tningsmenuet og bare tilf\u00f8je det til hovedmenuet?",
+      "enhanced_text": "Kan du g\u00e5 foran og forl\u00e6gge autos\u00e6tning for langs\u00e6tning i s\u00e6tningsmenuen, og bare tilf\u00f8je det til hovedmenuen?"
+    },
+    {
+      "timestamp": "2025-02-18T13:49:04.362562",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 260,
+      "output_tokens": 14,
+      "input_cost": 6.5e-07,
+      "output_cost": 1.4e-07,
+      "total_cost": 7.900000000000001e-07,
+      "original_text": "Can you go ahead and check if the language that it's detecting is correct?",
+      "enhanced_text": "Can you go ahead and check if the language it's detecting is correct?"
+    },
+    {
+      "timestamp": "2025-02-18T13:52:33.655788",
+      "model": "gpt-4o-2024-08-06",
+      "input_tokens": 264,
+      "output_tokens": 18,
+      "input_cost": 6.6e-07,
+      "output_cost": 1.8e-07,
+      "total_cost": 8.4e-07,
+      "original_text": "please go ahead and update the updates readme file with all the updates that we made so far",
+      "enhanced_text": "Please go ahead and update the README file with all the updates we have made so far."
+    }
+  ],
+  "total_cost": 0.04004125500000002,
+  "last_updated": "2025-02-18T13:52:33.655788"
+}
