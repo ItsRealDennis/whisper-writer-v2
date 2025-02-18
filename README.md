@@ -26,8 +26,8 @@ A modern, intelligent speech-to-text application powered by OpenAI's Whisper and
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/whisper-wit.git
-cd whisper-wit
+git clone https://github.com/yourusername/whisper-writer-v2.git
+cd whisper-writer-v2
 ```
 
 2. Install dependencies:
