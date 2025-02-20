@@ -109,9 +109,9 @@ recording_options:
       - press_to_toggle
       - hold_to_record
   max_duration:
-    value: 120
+    value: 0
     type: int
-    description: "Maximum duration in seconds for a single WhisperWit recording. Set to 0 for unlimited duration. Note: OpenAI has a 25MB file size limit."
+    description: "Maximum duration in seconds for a single WhisperWit recording. Set to 0 for unlimited duration. For API mode, recordings will be automatically limited to stay under OpenAI's 25MB file size limit. Local mode has no file size restrictions."
   sound_device:
     value: null
     type: str

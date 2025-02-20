@@ -4,7 +4,6 @@ import numpy as np
 import sounddevice as sd
 import tempfile
 import wave
-import webrtcvad
 from PyQt5.QtCore import QThread, QMutex, pyqtSignal
 from collections import deque
 from threading import Event
@@ -15,6 +14,14 @@ from cost_tracker import CostTracker
 
 # Initialize cost tracker
 cost_tracker = CostTracker()
+
+# Try to import webrtcvad, but don't fail if it's not available
+try:
+    import webrtcvad
+    WEBRTCVAD_AVAILABLE = True
+except ImportError:
+    WEBRTCVAD_AVAILABLE = False
+    ConfigManager.console_print("webrtcvad not available, falling back to continuous recording mode")
 
 class ResultThread(QThread):
     """
@@ -163,15 +170,19 @@ class ResultThread(QThread):
         # and give microphone time to properly initialize
         initial_frames_to_skip = int(0.3 * self.sample_rate / frame_size)
 
-        # Create VAD only for recording modes that use it
+        # Create VAD only for recording modes that use it and if webrtcvad is available
         recording_mode = recording_options.get('recording_mode') or 'continuous'
         vad = None
-        if recording_mode in ('voice_activity_detection', 'continuous'):
-            vad = webrtcvad.Vad(1)  # Reduced VAD aggressiveness for better handling of quiet speech
-            speech_detected = False
-            silent_frame_count = 0
-            speech_frame_count = 0  # Track consecutive speech frames
-            min_speech_frames = 3    # Minimum consecutive speech frames to confirm speech
+        if WEBRTCVAD_AVAILABLE and recording_mode in ('voice_activity_detection', 'continuous'):
+            try:
+                vad = webrtcvad.Vad(1)  # Reduced VAD aggressiveness for better handling of quiet speech
+                speech_detected = False
+                silent_frame_count = 0
+                speech_frame_count = 0  # Track consecutive speech frames
+                min_speech_frames = 3    # Minimum consecutive speech frames to confirm speech
+            except Exception as e:
+                ConfigManager.console_print(f"Error initializing VAD: {str(e)}")
+                vad = None
 
         audio_buffer = deque(maxlen=frame_size)
         recording = []
@@ -221,24 +232,29 @@ class ResultThread(QThread):
                     break
 
                 if vad:
-                    is_speech = vad.is_speech(frame.tobytes(), self.sample_rate)
-                    
-                    if is_speech:
-                        speech_frame_count += 1
-                        silent_frame_count = 0
+                    try:
+                        is_speech = vad.is_speech(frame.tobytes(), self.sample_rate)
                         
-                        # Only set speech_detected after enough consecutive speech frames
-                        if speech_frame_count >= min_speech_frames and not speech_detected:
-                            ConfigManager.console_print("Speech detected.")
-                            speech_detected = True
-                    else:
-                        speech_frame_count = 0
-                        if speech_detected:
-                            silent_frame_count += 1
+                        if is_speech:
+                            speech_frame_count += 1
+                            silent_frame_count = 0
+                            
+                            # Only set speech_detected after enough consecutive speech frames
+                            if speech_frame_count >= min_speech_frames and not speech_detected:
+                                ConfigManager.console_print("Speech detected.")
+                                speech_detected = True
+                        else:
+                            speech_frame_count = 0
+                            if speech_detected:
+                                silent_frame_count += 1
 
-                    # Stop recording if either stop condition is met
-                    if (speech_detected and silent_frame_count > silence_frames) or not self.is_recording:
-                        break
+                        # Stop recording if either stop condition is met
+                        if (speech_detected and silent_frame_count > silence_frames) or not self.is_recording:
+                            break
+                    except Exception as e:
+                        ConfigManager.console_print(f"Error in VAD processing: {str(e)}")
+                        # If VAD fails, continue recording without it
+                        vad = None
 
         audio_data = np.array(recording, dtype=np.int16)
         duration = len(audio_data) / self.sample_rate

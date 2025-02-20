@@ -94,7 +94,16 @@ def transcribe_api(audio_data, word_callback=None):
     Args:
         audio_data: Audio data to transcribe
         word_callback: Optional callback function for word-by-word updates
+        
+    Note:
+        OpenAI has a 25MB file size limit. This function will automatically
+        check and warn if the audio file approaches this limit.
     """
+    # Check estimated file size (assuming 16-bit audio at 16kHz)
+    estimated_size_mb = (len(audio_data) * 2) / (1024 * 1024)  # Convert bytes to MB
+    if estimated_size_mb > 23:  # Use 23MB as safety margin
+        ConfigManager.console_print(f"Warning: Audio file size ({estimated_size_mb:.1f}MB) is approaching OpenAI's 25MB limit.")
+        return "Error: Recording too long. Please try a shorter recording."
     global detected_language
     model_options = ConfigManager.get_config_section('model_options')
     client = OpenAI(

@@ -22,21 +22,20 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'stopRecording') {
     stopRecording()
       .then(text => {
-        // Send text to content script
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-          chrome.tabs.sendMessage(tabs[0].id, { 
-            action: 'insertText', 
-            text: text 
+          chrome.tabs.sendMessage(tabs[0].id, {
+            action: 'insertText',
+            text: text
           });
         });
-        sendResponse({ success: true });
+        sendResponse({ success: true, text: text });
       })
       .catch(error => {
         console.error('Stop recording error:', error);
         sendResponse({ success: false, error: error.message });
-        chrome.runtime.sendMessage({ 
-          action: 'recordingError', 
-          error: error.message 
+        chrome.runtime.sendMessage({
+          action: 'recordingError',
+          error: error.message
         });
       });
     return true; // Keep message channel open for async response
@@ -105,8 +104,9 @@ async function stopRecording() {
     mediaRecorder.onstop = async () => {
       try {
         const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
-        const text = await transcribeAudio(audioBlob);
-        resolve(text);
+        const transcript = await transcribeAudio(audioBlob);
+        const enhancedTranscript = await enhanceTranscription(transcript);
+        resolve(enhancedTranscript);
       } catch (error) {
         console.error('Transcription error:', error);
         reject(error);
@@ -157,5 +157,40 @@ async function transcribeAudio(audioBlob) {
   } catch (error) {
     console.error('Transcription API error:', error);
     throw new Error('Transcription failed: ' + error.message);
+  }
+}
+
+async function enhanceTranscription(transcript) {
+  const { apiKey } = await chrome.storage.local.get(['apiKey']);
+  if (!apiKey) {
+    throw new Error('Please set your OpenAI API key in settings');
+  }
+  const body = {
+    model: "gpt-4o",
+    messages: [
+      { role: "system", content: "You are a transcription enhancement assistant. Refine the text for clarity, punctuation, and grammar." },
+      { role: "user", content: transcript }
+    ],
+    temperature: 0.0
+  };
+  try {
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
+      body: JSON.stringify(body)
+    });
+    if (!response.ok) {
+      const error = await response.json();
+      console.error('ChatGPT API error:', error);
+      throw new Error(error.error?.message || 'ChatGPT enhancement failed');
+    }
+    const result = await response.json();
+    return result.choices[0].message.content.trim();
+  } catch (error) {
+    console.error('Enhancement error:', error);
+    throw new Error('ChatGPT enhancement failed: ' + error.message);
   }
 }
